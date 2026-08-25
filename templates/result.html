@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidGrab - النتيجة</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="/" class="logo">
+            Vid<span>Grab</span>
+        </a>
+
+        <a href="/" class="back">
+            ← الرئيسية
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="result-page">
+
+    <div class="container">
+
+        {% if error %}
+
+        <div class="result-card error-card">
+
+            <div class="big-icon">
+                ⚠️
+            </div>
+
+            <h1>تعذر معالجة الرابط</h1>
+
+            <p>{{ error }}</p>
+
+            <a href="/" class="main-button">
+                تجربة رابط آخر
+            </a>
+
+        </div>
+
+        {% else %}
+
+        <div class="result-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h1>
+                تم التعرف على الرابط
+            </h1>
+
+            <div class="platform">
+                المنصة: <strong>{{ platform }}</strong>
+            </div>
+
+            <div class="url-preview">
+                {{ url }}
+            </div>
+
+            <div class="ad-box result-ad">
+                Advertisement
+            </div>
+
+            <div class="download-placeholder">
+
+                <h3>
+                    رابط التحميل جاهز للمعالجة
+                </h3>
+
+                <p>
+                    هذه نسخة تجريبية من الموقع.
+                    سيتم ربط محرك معالجة الروابط في المرحلة التالية.
+                </p>
+
+                <button
+                    class="main-button"
+                    disabled>
+                    ⬇️ Download
+                </button>
+
+            </div>
+
+            <p class="legal-note">
+                استخدم الخدمة فقط لتنزيل المحتوى الذي تملك حق
+                تنزيله أو الذي يسمح صاحبه بذلك.
+            </p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="copyright">
+        © 2026 VidGrab
+    </div>
+
+</footer>
+
+</body>
+</html>
