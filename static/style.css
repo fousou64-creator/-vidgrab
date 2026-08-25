@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #171923;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.header {
+    background: white;
+    border-bottom: 1px solid #e8e8ee;
+}
+
+.nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #635bff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #635bff;
+}
+
+.back {
+    color: #635bff;
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 75px 0 60px;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at top,
+            #eceaff,
+            #f7f8fc 60%
+        );
+}
+
+.badge {
+    display: inline-block;
+    background: white;
+    border: 1px solid #e4e2ff;
+    padding: 7px 16px;
+    border-radius: 30px;
+    color: #635bff;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #635bff;
+}
+
+.subtitle {
+    max-width: 600px;
+    margin: auto;
+    color: #656977;
+    font-size: 18px;
+}
+
+
+/* DOWNLOAD BOX */
+
+.download-box {
+    background: white;
+    padding: 10px;
+    border-radius: 18px;
+    max-width: 750px;
+    margin: 35px auto 10px;
+    display: flex;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.download-box input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    padding: 17px;
+    font-size: 16px;
+    direction: ltr;
+    text-align: left;
+}
+
+.download-box button,
+.main-button {
+    border: 0;
+    background: #635bff;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.download-box button:hover,
+.main-button:hover {
+    opacity: .9;
+}
+
+.notice {
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* PLATFORMS */
+
+.platforms {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.platforms div {
+    background: white;
+    border: 1px solid #e7e7ed;
+    padding: 9px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+
+/* ADS */
+
+.ad-container {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.ad-label {
+    color: #999;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.ad-box {
+    min-height: 90px;
+    background: #eeeeF2;
+    border: 1px dashed #c8c8cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    border-radius: 10px;
+}
+
+
+/* FEATURES */
+
+.features {
+    background: white;
+    padding: 70px 0;
+}
+
+.features h2,
+.info h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    border: 1px solid #e9e9ef;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+}
+
+.feature-card .icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #70727c;
+}
+
+
+/* STEPS */
+
+.info {
+    padding: 70px 0;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.step {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.step strong {
+    width: 42px;
+    height: 42px;
+    background: #635bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* RESULT */
+
+.result-page {
+    min-height: 75vh;
+    padding: 70px 0;
+}
+
+.result-card {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,.06);
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    background: #e7f9ee;
+    color: #16a05d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 20px;
+    font-size: 30px;
+}
+
+.big-icon {
+    font-size: 45px;
+}
+
+.error-card p {
+    color: #777;
+    margin: 15px 0 25px;
+}
+
+.platform {
+    margin: 15px 0;
+}
+
+.url-preview {
+    direction: ltr;
+    text-align: left;
+    background: #f5f5f8;
+    padding: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.result-ad {
+    margin: 25px 0;
+}
+
+.download-placeholder {
+    background: #f7f8fc;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.download-placeholder p {
+    color: #777;
+    margin: 10px 0 20px;
+}
+
+.main-button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.legal-note {
+    font-size: 12px;
+    color: #888;
+    margin-top: 25px;
+}
+
+
+/* LEGAL */
+
+.legal-page {
+    min-height: 75vh;
+    padding: 60px 0;
+}
+
+.legal-page .container {
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+}
+
+.legal-page h1 {
+    margin-bottom: 25px;
+}
+
+.legal-page h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.legal-page p {
+    color: #60626c;
+}
+
+.contact-box {
+    margin-top: 25px;
+    background: #f7f8fc;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #11121a;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-content p {
+    color: #aaa;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #bbb;
+}
+
+.copyright {
+    text-align: center;
+    color: #888;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .nav {
+        height: auto;
+        padding: 18px 0;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 55px 0 45px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .download-box {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .download-box input {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .download-box button {
+        width: 100%;
+    }
+
+    .feature-grid,
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .result-card {
+        padding: 25px 18px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
